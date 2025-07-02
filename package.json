@@ -2,10 +2,11 @@
   "name": "dashboard",
   "version": "1.0.0",
   "description": "stock",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js"
+    
   },
   "author": "ravindra kambale",
   "license": "ISC",
