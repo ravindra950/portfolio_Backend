@@ -11,6 +11,10 @@ app.use(express.json());
 mongoose.connect(process.env.MONGO_URI).then(() => console.log(" MongoDB Atlas connected"))
   .catch((err) => console.error(" MongoDB connection error:", err));
 
+  app.get("/", (req, res) => {
+  res.send("API Running...");
+});
+
 app.use("/api/stocks", stockRoutes);
 
 const PORT = process.env.PORT || 4000;
